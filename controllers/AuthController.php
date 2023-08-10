@@ -13,6 +13,8 @@ class AuthController extends Controller
         if ($request->isPost()) {
             return 'handle login submit data';
         }
+        
+        $this->setLayout('auth');
         return $this->render('login');
     }
 
@@ -22,6 +24,7 @@ class AuthController extends Controller
             return 'handle register submit data';
         }
 
+        $this->setLayout('auth');
         return $this->render('register');
     }
 }
