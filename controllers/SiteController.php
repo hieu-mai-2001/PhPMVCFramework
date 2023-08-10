@@ -7,6 +7,7 @@ require_once '../core/Controller.php';
 
 use core\Controller;
 use core\Application;
+use core\Request;
 
 class SiteController extends Controller
 {
@@ -25,8 +26,9 @@ class SiteController extends Controller
         return $this->render('contact');
     }
 
-    public function handleContact()
+    public function handleContact(Request $request)
     {
+        $body = $request->getBody();
         return 'Handling submitted data posted';
     }
 }
