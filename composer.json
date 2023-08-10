@@ -1,0 +1,15 @@
+{
+    "name": "h002797/project-ph-p",
+    "autoload": {
+        "psr-4": {
+            "PhPMVCFramework\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "hieu-mai",
+            "email": "hieu-mai@cybozu.vn"
+        }
+    ],
+    "require": {}
+}
